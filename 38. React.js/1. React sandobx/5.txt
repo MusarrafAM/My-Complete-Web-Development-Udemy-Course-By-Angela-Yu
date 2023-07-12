@@ -1,0 +1,17 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+const customColor =  {
+  color : "red",
+  fontSize: "20px",
+  border: "1px solid black"
+}
+
+customColor.color = "green";
+
+ReactDOM.render(
+  <div>
+    <h1 style={customColor}>Hello World!</h1>
+  </div>,
+  document.getElementById("root")
+);
